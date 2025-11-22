@@ -9,7 +9,13 @@ pipeline {
 
     stage('demostage2') {
       steps {
-        echo 'helloworld2'
+        sh './jenkins/build.sh'
+      }
+    }
+
+    stage('demostage3') {
+      steps {
+        sh './jenkins/test-all.sh'
       }
     }
 
