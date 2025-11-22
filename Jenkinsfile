@@ -1,12 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('demostage') {
-      steps {
-        echo 'helloooooo'
-      }
-    }
-
     stage('demostage2') {
       steps {
         sh './jenkins/build.sh'
